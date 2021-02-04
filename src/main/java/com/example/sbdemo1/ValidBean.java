@@ -19,7 +19,7 @@ public class ValidBean {
     private Integer age;
     @Email(message = "邮箱格式不对")
 //    @ErrorCode(code = 5,type = Email.class)
-    @NotBlank(message = "邮箱不能为空")
+//    @NotBlank(message = "邮箱不能为空")
 //    @ErrorCode(code = 6,type = NotBlank.class)
     private String emailnumber;
     @Pattern(regexp = "(^\\d{8}(0\\d|10|11|12)([0-2]\\d|30|31)\\d{3}$)|(^\\d{6}(18|19|20)\\d{2}(0[1-9]|10|11|12)([0-2]\\d|30|31)\\d{3}(\\d|X|x)$)",message = "不合法的身份证号码")
