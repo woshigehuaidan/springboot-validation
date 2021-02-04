@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery.min.1.11.3.js"></script>
+    <script>
+        function login() {
+            console.log("到了");
+            var name = document.getElementById("id_name").value;
+            var age = document.getElementById("id_age").value;
+
+            var strjson = {name:name,age:age};
+            console.log(strjson)
+            $.ajax({
+                url:'/test/testValid2',
+                contentType:'application/json',
+                data:JSON.stringify(strjson),
+                type:'POST',
+                dataType:'json',
+                success:function (data) {
+                    if (data.success) {
+                        window.location.href='/result.html';
+                    }else {
+                        $('#errorText').text(data.resultInfo);
+                    }
+                },
+                error:function () {
+                    $('#errorText').text('ajax失败')
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+我是spring-boot测试工程
+<hr>
+<form action="">
+    <input type="text" id="id_name" name="name" value="" placeholder="请输入姓名">
+    <hr>
+    <input type="text" id="id_age" name="age" value="" placeholder="请输入年龄">
+    <hr>
+    <hr>
+    <input type="button" value="提交" onclick="login()">
+</form>
+<h2 style="color: red" id="errorText"></h2>
+<hr>
+<a href="/hello1">访问后台的controller,返回一个freemarker</a>
+<hr>
+<a href="/hello2?data3=哈哈&data4=xxx4">访问一个后台的controller,返回一个json</a>
+</body>
+</html>
