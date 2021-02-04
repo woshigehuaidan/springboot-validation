@@ -7,7 +7,7 @@ import org.hibernate.validator.constraints.Range;
 import javax.validation.constraints.*;
 
 public class ValidBean {
-    @NotBlank(message="用户名不能为空")
+//    @NotBlank(message="用户名不能为空")
 //    @ErrorCode(code = 1,type = NotBlank.class)
     @Length(max = 10,message = "名字长度不在范围之内")
 //    @ErrorCode(code = 2,type = Length.class)

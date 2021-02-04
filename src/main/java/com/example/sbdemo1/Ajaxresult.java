@@ -8,6 +8,12 @@ public class Ajaxresult {
     private boolean success;
     private Integer errorcode;
 
+
+    public Ajaxresult(String resultInfo, boolean success) {
+        this.resultInfo = resultInfo;
+        this.success = success;
+    }
+
     public Ajaxresult(String resultInfo, boolean success, Integer errorcode) {
         this.resultInfo = resultInfo;
         this.success = success;

@@ -1,2 +1,5 @@
 # Default ignored files
 /workspace.xml
+
+# 忽略所有的txt文件
+*.txt

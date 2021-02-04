@@ -62,7 +62,7 @@ public class TestValidated {
 
     @RequestMapping("/testValid2")
     public String testValid2(@RequestBody @Validated  ValidBean validBean) {
-        Ajaxresult ajaxresult = null;
+        Ajaxresult ajaxresult = new Ajaxresult(null,false);
         if(validBean.getName().equals("")||validBean.getName()==null||validBean.getAge()==null){
             ajaxresult.setSuccess(false);
             ajaxresult.setResultInfo("用户名不能为空!");
