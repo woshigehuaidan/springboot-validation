@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 //@RestControllerAdvice
+@RestControllerAdvice
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(value = MethodArgumentNotValidException.class)
