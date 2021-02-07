@@ -15,7 +15,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-//@RestControllerAdvice
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
@@ -26,7 +25,6 @@ public class GlobalExceptionHandler {
         BindingResult bindingResult = e.getBindingResult();
         System.out.println(Size.class.getName());
         System.out.println(bindingResult.getFieldError().getCode());
-        System.out.println(bindingResult.getFieldError().getField());
         System.out.println(bindingResult.getFieldError().getDefaultMessage());
         Ajaxresult ajaxresult = new Ajaxresult(null,false);
         ajaxresult.setSuccess(false);
