@@ -24,7 +24,8 @@ public class GlobalExceptionHandler {
         System.out.println(parameterType.getCanonicalName());
         BindingResult bindingResult = e.getBindingResult();
         System.out.println(Size.class.getName());
-        System.out.println(bindingResult.getFieldError().getCode());//Field没了
+        System.out.println(bindingResult.getFieldError().getCode());
+        System.out.println(bindingResult.getFieldError().getField());//Field还在
         System.out.println(bindingResult.getFieldError().getDefaultMessage());
         Ajaxresult ajaxresult = new Ajaxresult(null,false);
         ajaxresult.setSuccess(false);
