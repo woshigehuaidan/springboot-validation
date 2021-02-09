@@ -25,23 +25,13 @@ public class GlobalExceptionHandler {
         BindingResult bindingResult = e.getBindingResult();
         System.out.println(Size.class.getName());
         System.out.println(bindingResult.getFieldError().getCode());
-
-
         System.out.println(bindingResult.getFieldError().getField());   //?在不在
-        
-
         System.out.println(bindingResult.getFieldError().getField());//不在了
-
-
         System.out.println(bindingResult.getFieldError().getField());
-        
-
         //?在不在
-
         System.out.println(bindingResult.getFieldError().getField());//不在了
-
-
         System.out.println(bindingResult.getFieldError().getDefaultMessage());
+        System.out.println(bindingResult.getFieldError().getDefaultMessage());//消息
         Ajaxresult ajaxresult = new Ajaxresult(null,false);
         ajaxresult.setSuccess(false);
         ajaxresult.setResultInfo(bindingResult.getAllErrors().get(0).getDefaultMessage());
