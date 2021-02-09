@@ -29,7 +29,7 @@ public class GlobalExceptionHandler {
         System.out.println(bindingResult.getFieldError().getField());
         
         //?在不在
-        System.out.println(bindingResult.getFieldError().getDefaultMessage());
+        System.out.println(bindingResult.getFieldError().getDefaultMessage());//消息
         Ajaxresult ajaxresult = new Ajaxresult(null,false);
         ajaxresult.setSuccess(false);
         ajaxresult.setResultInfo(bindingResult.getAllErrors().get(0).getDefaultMessage());
