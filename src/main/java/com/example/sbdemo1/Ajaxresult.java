@@ -38,9 +38,7 @@ public class Ajaxresult {
         this.resultInfo = resultInfo;
     }
 
-    public boolean isSuccess() {
-        return success;
-    }
+
 
     public void setSuccess(boolean success) {
         this.success = success;
