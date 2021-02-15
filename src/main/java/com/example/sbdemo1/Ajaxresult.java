@@ -39,10 +39,12 @@ public class Ajaxresult {
     }
 
     //你好啊
-    //大家啊
+    //大家都好啊
     public boolean isSuccess() {
         return success;
     }
+
+
     public void setSuccess(boolean success) {
         this.success = success;
     }
