@@ -39,16 +39,17 @@ public class Ajaxresult {
     }
 
     //你好啊
-    //大家好啊
+    //大家啊
     public boolean isSuccess() {
         return success;
+    }
+    public void setSuccess(boolean success) {
+        this.success = success;
     }
     //大家都好啊
     //你也好啊
 
-    public void setSuccess(boolean success) {
-        this.success = success;
-    }
+
 
 
     public JSONObject toJSONObject() {
