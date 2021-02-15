@@ -38,16 +38,13 @@ public class Ajaxresult {
         this.resultInfo = resultInfo;
     }
 
-    //我好啊
     //你好啊
-
+    //大家好啊
     public boolean isSuccess() {
         return success;
     }
-
-    //我也好啊
+    //大家都好啊
     //你也好啊
-
 
     public void setSuccess(boolean success) {
         this.success = success;
