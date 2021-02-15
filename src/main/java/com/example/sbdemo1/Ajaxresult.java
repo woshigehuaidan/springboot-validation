@@ -6,7 +6,7 @@ import com.alibaba.fastjson.parser.Feature;
 public class Ajaxresult {
     private String resultInfo;
 
-    private boolean success;//成功了吗?没有吧?
+    private boolean success;//成功了吗?
 
     private Integer errorcode;
 
