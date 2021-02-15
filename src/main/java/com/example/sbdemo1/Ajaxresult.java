@@ -39,7 +39,7 @@ public class Ajaxresult {
     }
 
     //你好啊
-    //大家啊
+    //大家不好啊
     public boolean isSuccess() {
         return success;
     }
