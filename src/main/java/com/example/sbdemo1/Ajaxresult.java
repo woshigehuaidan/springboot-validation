@@ -37,7 +37,7 @@ public class Ajaxresult {
     public void setResultInfo(String resultInfo) {
         this.resultInfo = resultInfo;
     }
-
+    //Git产生冲突了吗
     public boolean isSuccess() {
         return success;
     }
