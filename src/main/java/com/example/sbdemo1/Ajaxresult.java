@@ -35,7 +35,7 @@ public class Ajaxresult {
     public void setResultInfo(String resultInfo) {
         this.resultInfo = resultInfo;
     }
-
+    //有没有产生冲突?
     public boolean isSuccess() {
         return success;
     }
