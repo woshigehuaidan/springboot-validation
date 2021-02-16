@@ -37,6 +37,7 @@ public class Ajaxresult {
     }
     //是否应该产生冲突呢//我不知道idea
     //是否产生了冲突呢//你应该肯定知道
+    //是否应该产生冲突呢//你肯定知道idea
     public boolean isSuccess() {
         return success;
     }
@@ -45,6 +46,7 @@ public class Ajaxresult {
     }
     //否应该产生冲突呢//我不知道idea
     //是否产生了冲突呢//你你应该肯定知道
+    //是否应该产生冲突呢//你肯定知道idea
 
     public JSONObject toJSONObject() {
 
