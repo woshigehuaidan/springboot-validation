@@ -36,7 +36,6 @@ public class Ajaxresult {
         this.resultInfo = resultInfo;
     }
     //是否产生了冲突呢//你说呢
-    //是否应该产生冲突呢
     public boolean isSuccess() {
         return success;
     }
@@ -44,7 +43,6 @@ public class Ajaxresult {
         this.success = success;
     }
     //是否产生了冲突呢//你说呢
-    //否应该产生冲突呢
     public JSONObject toJSONObject() {
 
         String msg = JSONObject.toJSONString(this);
