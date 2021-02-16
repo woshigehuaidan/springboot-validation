@@ -5,7 +5,7 @@ import com.alibaba.fastjson.parser.Feature;
 
 public class Ajaxresult {
     private String resultInfo;
-    private boolean success;//测试Git
+    private boolean success;
     private Integer errorcode;
 
 
@@ -35,14 +35,12 @@ public class Ajaxresult {
     public void setResultInfo(String resultInfo) {
         this.resultInfo = resultInfo;
     }
-    //是否应该产生冲突呢//你肯定知道idea
     public boolean isSuccess() {
         return success;
     }
     public void setSuccess(boolean success) {
         this.success = success;
     }
-    //是否应该产生冲突呢//你肯定知道idea
 
     public JSONObject toJSONObject() {
 
