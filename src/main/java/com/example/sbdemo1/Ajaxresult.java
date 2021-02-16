@@ -42,7 +42,7 @@ public class Ajaxresult {
     public void setSuccess(boolean success) {
         this.success = success;
     }
-
+    //否应该产生冲突呢
     public JSONObject toJSONObject() {
 
         String msg = JSONObject.toJSONString(this);
