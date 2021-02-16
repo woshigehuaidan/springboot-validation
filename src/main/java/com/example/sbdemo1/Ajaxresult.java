@@ -37,24 +37,13 @@ public class Ajaxresult {
     public void setResultInfo(String resultInfo) {
         this.resultInfo = resultInfo;
     }
-
-    //你好啊
-    //大家都好啊
-    //大家不好啊
-
+    //产生冲突了没有?
     public boolean isSuccess() {
         return success;
     }
-
-
     public void setSuccess(boolean success) {
         this.success = success;
     }
-    //大家都好啊
-    //你也好啊
-
-
-
 
     public JSONObject toJSONObject() {
 
