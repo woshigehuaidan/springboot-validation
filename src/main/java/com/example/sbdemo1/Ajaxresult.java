@@ -38,6 +38,7 @@ public class Ajaxresult {
         this.resultInfo = resultInfo;
     }
     //Git是否产生冲突了吗?
+    //Git产生冲突了没有?
     public boolean isSuccess() {
         return success;
     }
