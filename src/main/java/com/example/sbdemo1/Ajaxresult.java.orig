@@ -35,17 +35,22 @@ public class Ajaxresult {
     public void setResultInfo(String resultInfo) {
         this.resultInfo = resultInfo;
     }
+<<<<<<< HEAD
     //是否应该产生冲突呢//我不知道
+=======
     //是否产生了冲突呢//你说呢
+>>>>>>> main
     public boolean isSuccess() {
         return success;
     }
     public void setSuccess(boolean success) {
         this.success = success;
     }
+<<<<<<< HEAD
     //否应该产生冲突呢//我不知道
+=======
     //是否产生了冲突呢//你说呢
-
+>>>>>>> main
     public JSONObject toJSONObject() {
 
         String msg = JSONObject.toJSONString(this);
